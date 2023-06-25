@@ -1,4 +1,4 @@
-# .webp converter
+# webp_converter
 
 Convert all image files (or just a single file), in a directory to .webp format. 
 
@@ -26,8 +26,15 @@ cd webp-converter
 pip3 install -r requirements.txt
 ```
 
+## Run webp_converter anywhere
+
+```bash
+# Add the following line to your .bashrc or .zshrc
+alias webp_converter="python3 <path to webp_converter.py>"
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-View license in [LICENSE](LICENSE).
+View licence in [LICENCE](LICENSE).
 
