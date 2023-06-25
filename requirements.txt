@@ -1,0 +1,6 @@
+inquirerpy==0.3.4
+pfzy==0.3.4
+Pillow==9.5.0
+prompt-toolkit==3.0.38
+simple-term-menu==1.6.1
+wcwidth==0.2.6
