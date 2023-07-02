@@ -33,6 +33,11 @@ pip3 install -r requirements.txt
 alias webp_converter="python3 <path to webp_converter.py>"
 ```
 
+## What's next?
+
+- [ ] Add support for other image formats
+- [ ] Automatically replace references to the original image files in code
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
