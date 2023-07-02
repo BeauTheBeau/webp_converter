@@ -36,5 +36,6 @@ alias webp_converter="python3 <path to webp_converter.py>"
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
 View licence in [LICENCE](LICENSE).
 
