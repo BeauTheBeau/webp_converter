@@ -35,8 +35,18 @@ alias webp_converter="python3 <path to webp_converter.py>"
 
 ## What's next?
 
-- [ ] Add support for other image formats
-- [ ] Automatically replace references to the original image files in code
+- [X] Automatically replace references to the original image files in code
+    - [ ] Allow the user to exclude/include certain file extensions
+    - [ ] Allow the user to exclude/include certain directories
+    - [ ] Allow the user to exclude/include certain files
+    - [ ] Allow the user to use RegEx for all of the above
+        - [ ] Complete with validation!
+
+- [ ] Add support for converting to other image formats
+    - [ ] .png
+    - [ ] .jpg
+    - [ ] .jpeg
+    - [ ] .gif
 
 ## License
 
