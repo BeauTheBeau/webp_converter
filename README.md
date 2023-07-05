@@ -1,37 +1,58 @@
 # webp_converter
 
-Convert all image files (or just a single file), in a directory to .webp format. 
+Convert all image files (or just a single file), in a directory and its subdirectories, to .webp format, which is 25-34%
+smaller than .jpg and .png files<sup>[1](#footnote1)</sup>.
 
 ## Usage
 
 ```bash
-# Interactive mode
-python3 webp_converter.py
+main.py [-h] [--delete-original]
+      [--source-code-dir SOURCE_CODE_DIR]
+      path
+```
 
-# Non-interactive mode
-python3 webp_converter.py <path> <delete original>
+### Example
+
+```bash
+webp_converter ~/Pictures --delete-original --source-code-dir ~/Documents/Projects
 ```
 
 ## Requirements
 
 - Python 3.6+
-- Pillow
-- InquirerPy (only if using the interactive mode)
+- Pillow~=9.5.0
 
 ## Installation
 
-```bash
-git clone https://github.com/beauthebeau/webp-converter.git
-cd webp-converter
-pip3 install -r requirements.txt
-```
+### If on Linux
 
-## Run webp_converter anywhere
+Option 1: Download from GitHub Releases
 
 ```bash
-# Add the following line to your .bashrc or .zshrc
-alias webp_converter="python3 <path to webp_converter.py>"
+wget https://github.com/BeauTheBeau/webp_converter/releases/download/v1.0.0/webp_converter-v1.0.0
+chmod +x webp_converter-v1.0.0
+sudo mv webp_converter-v1.0.0 /usr/local/bin/webp_converter
 ```
+
+Option 2: Clone the repository
+
+```bash
+git clone
+cd webp_converter
+sudo ln -s $(pwd)/webp_converter.py /usr/local/bin/webp_converter 
+```
+
+### If on Windows or macOS
+
+We don't currently have executables for Windows or macOS, but you can still use the script by cloning the repository and
+running it with Python. Refer to the [Requirements](#requirements) section for information on what you need to install.
+
+```bash 
+git clone https://github.com/BeauTheBeau/webp_converter.git
+cd webp_converter
+python3 webp_converter.py -h
+```
+
 
 ## What's next?
 
@@ -53,4 +74,9 @@ alias webp_converter="python3 <path to webp_converter.py>"
 [MIT](https://choosealicense.com/licenses/mit/)
 
 View licence in [LICENCE](LICENSE).
+
+## Footnotes
+
+<a id="footnote1" name="footnote1">1</a>: [Google Developers - WebP](https://developers.google.com/speed/webp)
+
 
